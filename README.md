@@ -11,7 +11,7 @@
 ## Live Demo :clapper:
 
 See the latest updated demo here:
-[Link to DEMO](https://tristanvarewijck.github.io/browser-technologies/)
+[Link to DEMO](https://frozen-badlands-78278.herokuapp.com/)
 
 ---
 
