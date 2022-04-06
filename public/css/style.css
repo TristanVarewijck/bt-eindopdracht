@@ -1,0 +1,337 @@
+/* styles */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700;800;900&display=swap");
+/* font-family: 'Inter', sans-serif; */
+
+body {
+  box-sizing: border-box;
+  height: 100%;
+  background: var(--background);
+  font-family: var(--font);
+  color: var(--text);
+}
+
+:root {
+  --background: #f6faff;
+  --white: #ffffff;
+  --text: #151515;
+  --CTA: #3d9bf7;
+  --font: "Inter", sans-serif, Tahoma, Verdana, sans-serif;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga";
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+header {
+  position: relative;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+
+header small {
+  font-weight: 600;
+  color: var(--CTA);
+  font-size: 0.95em;
+}
+
+header a {
+  background: var(--CTA);
+  border-radius: 50px;
+  padding: 1em 1.5em 1em 1.5em;
+  box-shadow: 0px 4px 18px rgba(61, 155, 247, 0.35);
+  transition: 0.2s ease-in-out;
+  /* width: 100%; */
+}
+
+header a.secondary {
+  box-shadow: none;
+  background: none;
+  border: 1px var(--CTA) solid;
+}
+
+header a.secondary {
+  color: var(--CTA);
+}
+
+header a:hover {
+  background: #1c89f7;
+}
+
+header a {
+  color: var(--white);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-size: 1.1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a p {
+  margin: 0;
+  padding: 0;
+  margin-right: 15px;
+}
+
+/* layout changer  */
+.layout-changer {
+  /* background: green; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5em;
+  /* align-items: center; */
+}
+
+.layout-changer button.active {
+  border: 1px solid black;
+}
+
+main[data-route="landing"] section {
+  transition: transform 0.8s cubic-bezier(0.42, 0, 0.15, 1.4);
+}
+
+/* flexbox is globally supported */
+main[data-route="landing"] section.layout-1 {
+  background: var(--white);
+  border-radius: 12px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  transition: transform 0.8s cubic-bezier(0.42, 0, 0.15, 1.4);
+}
+
+main[data-route="landing"] section.layout-2 {
+  background: var(--white);
+  border-radius: 12px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+main[data-route="landing"] section > p {
+  text-align: center;
+}
+
+main[data-route="landing"] section a.layout-1 {
+  width: 250px;
+  height: 300px;
+  margin: 20px;
+  position: relative;
+  text-align: center;
+}
+
+main[data-route="landing"] section a.layout-2 {
+  width: 500px;
+  height: 450px;
+  margin: 20px;
+  position: relative;
+  text-align: center;
+}
+
+main[data-route="landing"] section a img {
+  width: 100%;
+  height: 100%;
+  /* border-radius: 3px; */
+  object-fit: cover;
+  box-shadow: 0 4px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+main[data-route="landing"] section a img:hover ~ span {
+  opacity: 1;
+  transform: translate(0, 0px);
+}
+
+main[data-route="landing"] section a span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.473);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  height: 40px;
+  transform: translate(0, -20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.2s ease-in;
+}
+
+main[data-route="landing"] section a span:hover {
+  opacity: 1;
+  transform: translate(0, 0px);
+}
+
+/* DETAIL PAGE */
+main[data-route="detail"] figure form button span {
+  color: rgb(223, 26, 26);
+}
+
+main[data-route="detail"] figure div {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+main[data-route="detail"] small {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  opacity: 67%;
+  font-weight: 500;
+}
+
+main[data-route="detail"] h2 {
+  margin-top: 0.5em;
+  margin-bottom: 0.3em;
+}
+
+main[data-route="detail"] img {
+  width: 350px;
+  height: auto;
+  margin-bottom: 0.4em;
+  position: relative;
+  text-align: center;
+}
+
+/* CREATE PAGE */
+main[data-route="create"] section {
+  padding: 1.5em 1.5em 1.5em 1.5em;
+  background: var(--white);
+  border-radius: 7px;
+  box-shadow: 0 4px 32px 0 rgba(31, 38, 135, 0.15);
+}
+main[data-route="create"] section div {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  border: solid rgb(134, 134, 134) 1px;
+  border-radius: 2px;
+  margin-bottom: 0.5em;
+  padding: 0.5em 0.8em 0.5em 0.8em;
+}
+
+main[data-route="create"] input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  margin-bottom: 0.5em;
+}
+
+main[data-route="create"] label {
+  padding-bottom: 1.2em;
+  text-transform: uppercase;
+  font-size: 0.6em;
+  font-weight: 500;
+  opacity: 0.67;
+}
+
+main[data-route="create"] button {
+  padding-bottom: 0.5em;
+  text-transform: uppercase;
+  font-size: 0.6em;
+  font-weight: 500;
+  opacity: 0.67;
+}
+
+main[data-route="create"] h2 {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 0 0 1em 0;
+}
+
+main[data-route="create"] form button {
+  margin-top: 0.75em;
+  background: var(--CTA);
+  border-radius: 50px;
+  padding: 1em 1.5em 1em 1.5em;
+  box-shadow: 0px 4px 18px rgba(61, 155, 247, 0.35);
+  width: 100%;
+  color: var(--white);
+  font-weight: 500;
+  font-size: 0.75em;
+}
+
+/* responsive elements */
+@media only screen and (max-width: 700px) {
+  header {
+    margin-bottom: 85px;
+  }
+  header div {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  main[data-route="landing"] section {
+    justify-content: center;
+  }
+
+  main[data-route="landing"] section.layout-2 {
+    background: var(--white);
+    border-radius: 12px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  main[data-route="landing"] section a.layout-2 {
+    width: 250px;
+    height: 300px;
+    margin: 20px;
+    position: relative;
+    text-align: center;
+  }
+}

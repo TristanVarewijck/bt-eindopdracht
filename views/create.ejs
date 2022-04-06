@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/layout') %>
+  <body>
+    <header>
+      <div>
+        <a href="/">
+          <span class="material-icons">chevron_left</span>
+          <p>Go Back</p>
+        </a>
+      </div>
+    </header>
+    <main data-route="create">
+      <section>
+        <h2>Add a new picture to Collection</h2>
+        <form action="/" enctype="multipart/form-data" method="POST">
+          <div class="form-group">
+            <label for="file">Upload picture*</label>
+
+            <input
+              type="file"
+              id="file"
+              name="file"
+              onchange="showPreview(event);"
+              required
+            />
+            <img
+              id="file-ip"
+              src="../images/default-placeholder.png"
+              width="75px"
+              height="auto"
+            />
+          </div>
+          <div class="form-group">
+            <label for="title">Title*</label>
+            <input
+              type="text"
+              class="form-control"
+              name="title"
+              id="title"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="location">Location</label>
+            <input
+              type="text"
+              class="form-control"
+              name="location"
+              id="location"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="description">Description</label>
+            <textarea
+              class="form-control"
+              id="description"
+              name="description"
+              rows="3"
+            ></textarea>
+          </div>
+
+          <button type="submit">CREATE</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
