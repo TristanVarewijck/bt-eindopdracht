@@ -50,11 +50,11 @@ For "Opdracht 3" of BT we had to make a RESTfull api where the focus was the "co
 
 Here you can see 2 activity diagrams on usual behaviours of the user of this app.
 
-1. Default Diagram <br>
-   <img src="https://github.com/TristanVarewijck/TechDefined/blob/main/assets/images/Default-flow.png" alt="default-flow" width="600px"/>
+1. Wireflow <br>
+   <img src="https://github.com/TristanVarewijck/bt-eindopdracht/blob/main/public/images/readme/coreFunction.png" alt="wireflow" width="600px"/>
 
-2. Search Diagram + (error) <br>
-   <img src="https://github.com/TristanVarewijck/TechDefined/blob/main/assets/images/Search-flow.png" alt="search-flow" width="600px"/>
+2. Core Layer <br>
+   <img src="https://github.com/TristanVarewijck/bt-eindopdracht/blob/main/public/images/readme/layers.png" alt="search-flow" width="600px"/>
 
 ## Usage
 
