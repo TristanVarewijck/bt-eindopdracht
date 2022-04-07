@@ -52,6 +52,10 @@ For "Opdracht 3" of BT we had to make a RESTfull api where the focus was the "co
 Here you can see the wireflow of this app wich represents the core functionality of this app.
 Below you can also see the layers my app is build out off with the core layer as most important.
 
+#### Core functionality
+
+The core functionality is adding pictures to an overview in addition you can delete the items you don’t want anymore.
+
 1. Wireflow <br>
    <img src="https://github.com/TristanVarewijck/bt-eindopdracht/blob/main/public/images/readme/coreFunction.png" alt="wireflow" width="600px"/>
 
@@ -65,7 +69,7 @@ Below you can also see the layers my app is build out off with the core layer as
 In this report i will check my findings when testing in multiple different browsers. In terms of Progressive Enhancement this is a very important step for optimizing the app.
 
 The report is only in dutch for now..
-(Dutch)
+(Dutch) :spiral_notepad:
 
 ### Chromium - Google Chrome
 
@@ -73,10 +77,10 @@ De app werkt met alle layers goed op Chrome, hij is ook goed responsive. De app 
 
 #### Features
 
-Uploaden: Werkt goed <br>
-Overview: Werkt goed <br>
-Delete: Werkt goed <br>
-Detail: Werkt goed <br>
+Uploaden: Werkt goed :white_check_mark:<br>
+Overview: Werkt goed :white_check_mark:<br>
+Delete: Werkt goed :white_check_mark:<br>
+Detail: Werkt goed :white_check_mark:<br>
 
 #### Javascript uit
 
@@ -86,7 +90,7 @@ Op het moment dat Javascript is uitgeschakeld in Chrome werkt het veranderen van
 
 Op het moment dat CSS uit is, is natuurlijk de styling weg maar de core functies doen het wel nog. De foto’s zijn nu wel onlogisch groot dit zou ik kunnen vervormen met HTML tags.  los daarvan zijn er ook nog buttons die helemaal niks meer doen dat wel een beetje vervelend.
 
-#### CHROME is goed.
+#### CHROME is goed :green_circle:
 
 ---
 
@@ -96,10 +100,10 @@ De app werkt net als op Chrome erg goed het ziet er exact hetzelfde uit, ik heb 
 
 #### Features
 
-Uploaden: Werkt goed <br>
-Overview: Werkt goed <br>
-Delete: Werkt goed <br>
-Detail: Werkt goed <br>
+Uploaden: Werkt goed :white_check_mark:<br>
+Overview: Werkt goed :white_check_mark:<br>
+Delete: Werkt goed :white_check_mark:<br>
+Detail: Werkt goed :white_check_mark:<br>
 
 #### Javascript uit
 
@@ -109,7 +113,7 @@ Uiteraard werken de functies die niet op Chrome werkten die met Javascript zijn 
 
 Hetzelfde als op Chrome is de app nu niet gestyled en is de layout veranderd ook nu zijn de foto’s veel te groot.
 
-#### FIREFOX is goed.
+#### FIREFOX is goed :green_circle:
 
 ---
 
@@ -119,10 +123,10 @@ De app werk op het Android apparaat die “EGDE” als browser gebruikt goed, de
 
 #### Features
 
-Uploaden: Werkt goed <br>
-Overview: Werkt goed <br>
-Delete: Werkt goed <br>
-Detail: Matig <br>
+Uploaden: Werkt goed :white_check_mark:<br>
+Overview: Werkt goed :white_check_mark:<br>
+Delete: Werkt goed :white_check_mark:<br>
+Detail: Matig :white_check_mark:<br>
 
 #### Javascript uit
 
@@ -132,7 +136,7 @@ Op het moment dat de javascript uit staat geld hetzelfde voor bij de andere brow
 
 Wanneer de CSS uit staat, werkt alles nog zeker prima, ik ben er zelfs achter gekomen dat de problemen die ik had met de sizes dat, dat komt door de CSS. Als de CSS uit staat dan staan de foto’s eigenlijk beter als wanneer de CSS aan staat. SUPER RAAR!
 
-#### EDGE is prima.
+#### EDGE is prima :orange_circle:
 
 ---
 
@@ -143,10 +147,10 @@ Wat me vooral opviel is dat de sizes echt precies waren zoals was bedoeld en dat
 
 #### Features
 
-Uploaden: Werkt goed <br>
-Overview: Werkt goed <br>
-Delete: Werkt goed <br>
-Detail: Werkt goed <br>
+Uploaden: Werkt goed :white_check_mark:<br>
+Overview: Werkt goed :white_check_mark:<br>
+Delete: Werkt goed :white_check_mark:<br>
+Detail: Werkt goed :white_check_mark:<br>
 
 #### Javascript uit
 
@@ -156,7 +160,7 @@ De app werkt perfect zonder alle functionaliteiten en, omdat de javascript voor 
 
 Op het moment van het uit doen van de CSS ziet er het eigenlijk predies hetzelfde uit als op Chrome als je de CSS uit doet, waar dus ook het probleem heerst dat de foto's te groot zijn als je de css uitschakeld maar daar wordt aan gewerkt.
 
-## Safari is goed.
+## Safari is goed :green_circle:
 
 ### IOS - Safari (mobile)
 
