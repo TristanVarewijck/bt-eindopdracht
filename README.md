@@ -132,7 +132,7 @@ Op het moment dat de javascript uit staat geld hetzelfde voor bij de andere brow
 
 Wanneer de CSS uit staat, werkt alles nog zeker prima, ik ben er zelfs achter gekomen dat de problemen die ik had met de sizes dat, dat komt door de CSS. Als de CSS uit staat dan staan de foto’s eigenlijk beter als wanneer de CSS aan staat. SUPER RAAR!
 
-## EDGE is prima.
+#### EDGE is prima.
 
 ---
 
