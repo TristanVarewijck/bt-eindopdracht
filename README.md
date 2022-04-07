@@ -160,9 +160,9 @@ De app werkt perfect zonder alle functionaliteiten en, omdat de javascript voor 
 
 Op het moment van het uit doen van de CSS ziet er het eigenlijk predies hetzelfde uit als op Chrome als je de CSS uit doet, waar dus ook het probleem heerst dat de foto's te groot zijn als je de css uitschakeld maar daar wordt aan gewerkt.
 
-## Safari is goed :green_circle:
+#### Safari is goed :green_circle:
 
-### IOS - Safari (mobile)
+### Conclusion
 
 This was the test report the consclusion of this report is that the app has good progressive enhancement across different browsers.
 
