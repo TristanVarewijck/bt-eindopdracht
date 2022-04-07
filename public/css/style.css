@@ -121,15 +121,15 @@ header a p {
 
 /* layout changer  */
 .layout-changer {
-  /* background: green; */
   display: flex;
   justify-content: center;
   margin-bottom: 1.5em;
-  /* align-items: center; */
 }
 
-.layout-changer button.active {
-  border: 1px solid black;
+.layout-changer button:active,
+:focus,
+:hover ~ span {
+  color: var(--CTA);
 }
 
 main[data-route="landing"] section {
@@ -255,7 +255,8 @@ main[data-route="create"] section div {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  border: solid rgb(134, 134, 134) 1px;
+  /* border: 3px; */
+  /* border: solid rgb(134, 134, 134) 1px; */
   border-radius: 2px;
   margin-bottom: 0.5em;
   padding: 0.5em 0.8em 0.5em 0.8em;
@@ -263,16 +264,26 @@ main[data-route="create"] section div {
 
 main[data-route="create"] input,
 textarea {
-  border: none;
-  background: none;
   outline: none;
-  margin-bottom: 0.5em;
+  border-radius: 4px;
+  padding: 0.5em 1em 0.5em 1em;
+  color: var(--text);
+  border-width: 1px;
+  border-color: rgb(224, 224, 224);
+  height: 100%;
+}
+
+main[data-route="create"] input:required:focus:valid {
+  background-color: #26de823d;
+}
+main[data-route="create"] input:focus:invalid {
+  background-color: #fc5c6450;
 }
 
 main[data-route="create"] label {
   padding-bottom: 1.2em;
   text-transform: uppercase;
-  font-size: 0.6em;
+  font-size: 0.75em;
   font-weight: 500;
   opacity: 0.67;
 }
@@ -333,5 +344,8 @@ main[data-route="create"] form button {
     margin: 20px;
     position: relative;
     text-align: center;
+  }
+  .layout-changer {
+    display: none;
   }
 }

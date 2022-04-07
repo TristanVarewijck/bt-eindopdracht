@@ -24,7 +24,7 @@ For "Opdracht 3" of BT we had to make a RESTfull api where the focus was the "co
 ## Table of Contents :arrow_right_hook:
 
 - [Features](#features)
-<!-- - [Activiy] (#activitydiagram) -->
+- [Wireflow](#wireflow)
 - [Usage](#Usage)
 - [Meta](#meta)
 - [License](#license)
@@ -46,7 +46,7 @@ For "Opdracht 3" of BT we had to make a RESTfull api where the focus was the "co
 
 ---
 
-<!-- ## Activity Diagram
+## Wireflow
 
 Here you can see 2 activity diagrams on usual behaviours of the user of this app.
 
@@ -54,7 +54,7 @@ Here you can see 2 activity diagrams on usual behaviours of the user of this app
    <img src="https://github.com/TristanVarewijck/TechDefined/blob/main/assets/images/Default-flow.png" alt="default-flow" width="600px"/>
 
 2. Search Diagram + (error) <br>
-   <img src="https://github.com/TristanVarewijck/TechDefined/blob/main/assets/images/Search-flow.png" alt="search-flow" width="600px"/> -->
+   <img src="https://github.com/TristanVarewijck/TechDefined/blob/main/assets/images/Search-flow.png" alt="search-flow" width="600px"/>
 
 ## Usage
 

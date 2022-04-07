@@ -13,10 +13,10 @@ const buttons = document.querySelectorAll(".layout-changer div button");
 const section = document.querySelector("main:first-of-type section");
 const a = document.querySelectorAll("main:first-of-type section a");
 
+//  change layout
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
     section.classList = button.value;
-
     a.forEach((a) => {
       a.classList = button.value;
     });
