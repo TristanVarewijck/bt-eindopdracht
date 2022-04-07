@@ -1,6 +1,18 @@
-/* styles */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700;800;900&display=swap");
-/* font-family: 'Inter', sans-serif; */
+/* font style  */
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("../fonts/Inter-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter-medium";
+  src: url("../fonts/Inter-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("../fonts/Inter-Bold.woff") format("woff");
+}
 
 body {
   box-sizing: border-box;

@@ -48,7 +48,8 @@ For "Opdracht 3" of BT we had to make a RESTfull api where the focus was the "co
 
 ## Wireflow
 
-Here you can see 2 activity diagrams on usual behaviours of the user of this app.
+Here you can see the wireflow of this app wich represents the core functionality of this app.
+Below you can also see the layers my app is build out off with the core layer as most important.
 
 1. Wireflow <br>
    <img src="https://github.com/TristanVarewijck/bt-eindopdracht/blob/main/public/images/readme/coreFunction.png" alt="wireflow" width="600px"/>
