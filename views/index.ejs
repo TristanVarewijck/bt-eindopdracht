@@ -32,7 +32,13 @@
         <p>You have not added any pictures to your collection yet</p>
         <% } else{ %> <% items.forEach(function(item){ %>
         <a class="layout-1" href="photo/<%=item.id%>">
-          <img src="images/<%=item.image%>" alt="<%=item.image%>" />
+          <img
+            src="images/<%=item.image%>"
+            alt="<%=item.image%>"
+            width="250px"
+            height="auto"
+          />
+
           <span><p>More info</p></span>
         </a>
         <% }); %> <% } %>
