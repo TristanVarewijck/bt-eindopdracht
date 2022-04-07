@@ -25,6 +25,7 @@ For "Opdracht 3" of BT we had to make a RESTfull api where the focus was the "co
 
 - [Features](#features)
 - [Wireflow](#wireflow)
+- [Test-Report](#test-report)
 - [Usage](#Usage)
 - [Meta](#meta)
 - [License](#license)
@@ -56,6 +57,80 @@ Below you can also see the layers my app is build out off with the core layer as
 
 2. Core Layer <br>
    <img src="https://github.com/TristanVarewijck/bt-eindopdracht/blob/main/public/images/readme/layers.png" alt="search-flow" width="600px"/>
+
+---
+
+## Test-Report
+
+In this report i will check my findings when testing in multiple different browsers. In terms of Progressive Enhancement this is a very important step for optimizing the app.
+
+The report is only in dutch for now..
+(Dutch)
+
+---
+
+### Chromium - Google Chrome
+
+De app werkt met alle layers goed op Chrome, hij is ook goed responsive de app is gemaakt op Chrome dus het is niet zo gek dat het hier goed op werkt.
+
+#### Features
+
+Uploaden: Werkt goed <br>
+Overview: Werkt goed <br>
+Delete: Werkt goed <br>
+Detail: Werkt goed <br>
+
+#### Javascript uit
+
+Op het moment dat Javascript is uitgeschakeld in Chrome werkt het veranderen van de layout niet meer en werkt de “image preview” niet meer, dit is natuurlijk best nadelig omdat het extra’s aan de app geeft maar het is gelukkig geen core functie waardoor het niet een heel grote ramp is.
+
+#### CSS uit
+
+Op het moment dat CSS uit is, is natuurlijk de styling weg maar de core functies doen het wel nog. De foto’s zijn nu wel onlogisch groot dit zou ik kunnen vervormen met HTML tags.  los daarvan zijn er ook nog buttons die helemaal niks meer doen dat wel een beetje vervelend.
+
+#### CHROME is goed.
+
+#### Non-Chromium - Firefox
+
+De app werkt net als op Chrome erg goed ziet er eigenlijk exact hetzelfde uit, ik heb dit eigenlijk automatische zo gekregen omdat ik tot de helft van dit project Firefox als browser had en ben overgestapt naar Chrome, waardoor de app goed werkt op beide.
+
+#### Features
+
+Uploaden: Werkt goed <br>
+Overview: Werkt goed <br>
+Delete: Werkt goed <br>
+Detail: Werkt goed <br>
+
+#### Javascript uit
+
+Uiteraard werken de functies die niet op Chrome werkten die met Javascript zijn gemaakt ook niet op Firefox voor de rest werkt de app uitstekend.
+
+#### CSS uit
+
+Hetzelfde als op Chrome is de app nu niet gestyled en is de layout veranderd ook nu zijn de foto’s veel te groot.
+
+#### FIREFOX is goed.
+
+### Android - EGDE (mobile)
+
+De app werk op het Android apparaat die “EGDE” als browser gebruikt opzicht wel goed, de core functionaliteit is nog steeds goed bruikbaar. Wat niet helemaal in orde is zijn sommige “sizes” van elementen. De form om een nieuwe foto te maken is veel te breed uitgerekt ook zijn de photo’s op de detail pagina ook veel te breed, waardoor je niet alle content meer kan zien.
+
+#### Features
+
+Uploaden: Werkt goed <br>
+Overview: Werkt goed <br>
+Delete: Werkt goed <br>
+Detail: Matig <br>
+
+#### Javascript uit
+
+Op het moment dat de javascript uit staat geld hetzelfde voor bij de andere browsers dan doet de layout knoppen het niet meer maar ook de image preview werkt niet meer, wat opzicht logische is omdat, dat met pure JavaScript is gemaakt. Voor de rest blijft alles hetzelfde.
+
+#### CSS uit
+
+Wanneer de CSS uit staat, werkt alles nog zeker prima, ik ben er zelfs achter gekomen dat de problemen die ik had met de sizes dat, dat komt door de CSS. Als de CSS uit staat dan staan de foto’s eigenlijk beter als wanneer de CSS aan staat. SUPER RAAR!
+
+EDGE is prima.
 
 ## Usage
 
