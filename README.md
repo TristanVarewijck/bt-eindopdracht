@@ -71,7 +71,7 @@ In this report i will check my findings when testing in multiple different brows
 The report is only in dutch for now..
 (Dutch) :spiral_notepad:
 
-### Chromium - Google Chrome
+### Chromium - Google Chrome :computer:
 
 De app werkt met alle layers goed op Chrome, hij is ook goed responsive. De app is gemaakt in Chrome dus het is niet zo gek dat het hier goed op werkt.
 
@@ -82,11 +82,11 @@ Overview: Werkt goed :white_check_mark:<br>
 Delete: Werkt goed :white_check_mark:<br>
 Detail: Werkt goed :white_check_mark:<br>
 
-#### Javascript uit
+#### Javascript uit :no_entry_sign:
 
 Op het moment dat Javascript is uitgeschakeld in Chrome werkt het veranderen van de layout niet meer en werkt de “image preview” niet meer, dit is natuurlijk best nadelig, omdat het extra’s aan de app geeft. Maar het is gelukkig geen core functie, waardoor het niet een heel grote ramp is.
 
-#### CSS uit
+#### CSS uit :no_entry_sign:
 
 Op het moment dat CSS uit is, is natuurlijk de styling weg maar de core functies doen het wel nog. De foto’s zijn nu wel onlogisch groot dit zou ik kunnen vervormen met HTML tags.  los daarvan zijn er ook nog buttons die helemaal niks meer doen dat wel een beetje vervelend.
 
@@ -94,7 +94,7 @@ Op het moment dat CSS uit is, is natuurlijk de styling weg maar de core functies
 
 ---
 
-### Non-Chromium - Firefox
+### Non-Chromium - Firefox :computer:
 
 De app werkt net als op Chrome erg goed het ziet er exact hetzelfde uit, ik heb dit eigenlijk automatische zo gekregen, omdat ik tot de helft van dit project Firefox als browser had en ben overgestapt naar Chrome, waardoor de app goed werkt op beide.
 
@@ -105,11 +105,11 @@ Overview: Werkt goed :white_check_mark:<br>
 Delete: Werkt goed :white_check_mark:<br>
 Detail: Werkt goed :white_check_mark:<br>
 
-#### Javascript uit
+#### Javascript uit :no_entry_sign:
 
 Uiteraard werken de functies die niet op Chrome werkten die met Javascript zijn gemaakt ook niet op Firefox voor de rest werkt de app uitstekend.
 
-#### CSS uit
+#### CSS uit :no_entry_sign:
 
 Hetzelfde als op Chrome is de app nu niet gestyled en is de layout veranderd ook nu zijn de foto’s veel te groot.
 
@@ -117,7 +117,7 @@ Hetzelfde als op Chrome is de app nu niet gestyled en is de layout veranderd ook
 
 ---
 
-### Android - EGDE (mobile)
+### Android - EGDE (mobile) :computer:
 
 De app werk op het Android apparaat die “EGDE” als browser gebruikt goed, de core functionaliteit is nog steeds goed bruikbaar. Wat niet helemaal in orde is zijn sommige “sizes” van elementen. De form om een nieuwe foto te maken is veel te breed uitgerekt ook zijn de photo’s op de detail pagina ook veel te breed, waardoor je niet alle content meer kan zien.
 
@@ -126,13 +126,13 @@ De app werk op het Android apparaat die “EGDE” als browser gebruikt goed, de
 Uploaden: Werkt goed :white_check_mark:<br>
 Overview: Werkt goed :white_check_mark:<br>
 Delete: Werkt goed :white_check_mark:<br>
-Detail: Matig :white_check_mark:<br>
+Detail: Matig :heavy_check_mark:<br>
 
-#### Javascript uit
+#### Javascript uit :no_entry_sign:
 
 Op het moment dat de javascript uit staat geld hetzelfde voor bij de andere browsers dan doet de layout knoppen het niet meer maar ook de image preview werkt niet meer, wat opzicht logische is omdat, dat met pure JavaScript is gemaakt. Voor de rest blijft alles hetzelfde.
 
-#### CSS uit
+#### CSS uit :no_entry_sign:
 
 Wanneer de CSS uit staat, werkt alles nog zeker prima, ik ben er zelfs achter gekomen dat de problemen die ik had met de sizes dat, dat komt door de CSS. Als de CSS uit staat dan staan de foto’s eigenlijk beter als wanneer de CSS aan staat. SUPER RAAR!
 
@@ -140,7 +140,7 @@ Wanneer de CSS uit staat, werkt alles nog zeker prima, ik ben er zelfs achter ge
 
 ---
 
-### IOS - Safari (mobile)
+### IOS - Safari (mobile) :computer:
 
 Over IOS heb ik weinig te zeggen, omdat de app hier echt pefect op werkt, misschien zelfs beter als op Chrome (gek genoeg)
 Wat me vooral opviel is dat de sizes echt precies waren zoals was bedoeld en dat het form ook niet vervormd was.
@@ -152,11 +152,11 @@ Overview: Werkt goed :white_check_mark:<br>
 Delete: Werkt goed :white_check_mark:<br>
 Detail: Werkt goed :white_check_mark:<br>
 
-#### Javascript uit
+#### Javascript uit :no_entry_sign:
 
 De app werkt perfect zonder alle functionaliteiten en, omdat de javascript voor deze app niet cruciaal is werkt de app ook gewoon nog zoals hij is bedoeld en is de styling ook niks veranderd.
 
-#### CSS uit
+#### CSS uit :no_entry_sign:
 
 Op het moment van het uit doen van de CSS ziet er het eigenlijk predies hetzelfde uit als op Chrome als je de CSS uit doet, waar dus ook het probleem heerst dat de foto's te groot zijn als je de css uitschakeld maar daar wordt aan gewerkt.
 
@@ -181,8 +181,6 @@ git clone https://github.com/TristanVarewijck/browser-technologies.git
 ### 2. Go to correct folder - NPM
 
 Go to the correct folder and run: npm install to install the correct packages
-
-BT/opdracht3
 
 ```
 npm i
