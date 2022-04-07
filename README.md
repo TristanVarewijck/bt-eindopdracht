@@ -67,11 +67,9 @@ In this report i will check my findings when testing in multiple different brows
 The report is only in dutch for now..
 (Dutch)
 
----
-
 ### Chromium - Google Chrome
 
-De app werkt met alle layers goed op Chrome, hij is ook goed responsive de app is gemaakt op Chrome dus het is niet zo gek dat het hier goed op werkt.
+De app werkt met alle layers goed op Chrome, hij is ook goed responsive. De app is gemaakt in Chrome dus het is niet zo gek dat het hier goed op werkt.
 
 #### Features
 
@@ -82,7 +80,7 @@ Detail: Werkt goed <br>
 
 #### Javascript uit
 
-Op het moment dat Javascript is uitgeschakeld in Chrome werkt het veranderen van de layout niet meer en werkt de “image preview” niet meer, dit is natuurlijk best nadelig omdat het extra’s aan de app geeft maar het is gelukkig geen core functie waardoor het niet een heel grote ramp is.
+Op het moment dat Javascript is uitgeschakeld in Chrome werkt het veranderen van de layout niet meer en werkt de “image preview” niet meer, dit is natuurlijk best nadelig, omdat het extra’s aan de app geeft. Maar het is gelukkig geen core functie, waardoor het niet een heel grote ramp is.
 
 #### CSS uit
 
@@ -90,9 +88,11 @@ Op het moment dat CSS uit is, is natuurlijk de styling weg maar de core functies
 
 #### CHROME is goed.
 
-#### Non-Chromium - Firefox
+---
 
-De app werkt net als op Chrome erg goed ziet er eigenlijk exact hetzelfde uit, ik heb dit eigenlijk automatische zo gekregen omdat ik tot de helft van dit project Firefox als browser had en ben overgestapt naar Chrome, waardoor de app goed werkt op beide.
+### Non-Chromium - Firefox
+
+De app werkt net als op Chrome erg goed het ziet er exact hetzelfde uit, ik heb dit eigenlijk automatische zo gekregen, omdat ik tot de helft van dit project Firefox als browser had en ben overgestapt naar Chrome, waardoor de app goed werkt op beide.
 
 #### Features
 
@@ -111,9 +111,11 @@ Hetzelfde als op Chrome is de app nu niet gestyled en is de layout veranderd ook
 
 #### FIREFOX is goed.
 
+---
+
 ### Android - EGDE (mobile)
 
-De app werk op het Android apparaat die “EGDE” als browser gebruikt opzicht wel goed, de core functionaliteit is nog steeds goed bruikbaar. Wat niet helemaal in orde is zijn sommige “sizes” van elementen. De form om een nieuwe foto te maken is veel te breed uitgerekt ook zijn de photo’s op de detail pagina ook veel te breed, waardoor je niet alle content meer kan zien.
+De app werk op het Android apparaat die “EGDE” als browser gebruikt goed, de core functionaliteit is nog steeds goed bruikbaar. Wat niet helemaal in orde is zijn sommige “sizes” van elementen. De form om een nieuwe foto te maken is veel te breed uitgerekt ook zijn de photo’s op de detail pagina ook veel te breed, waardoor je niet alle content meer kan zien.
 
 #### Features
 
@@ -130,7 +132,37 @@ Op het moment dat de javascript uit staat geld hetzelfde voor bij de andere brow
 
 Wanneer de CSS uit staat, werkt alles nog zeker prima, ik ben er zelfs achter gekomen dat de problemen die ik had met de sizes dat, dat komt door de CSS. Als de CSS uit staat dan staan de foto’s eigenlijk beter als wanneer de CSS aan staat. SUPER RAAR!
 
-EDGE is prima.
+## EDGE is prima.
+
+---
+
+### IOS - Safari (mobile)
+
+Over IOS heb ik weinig te zeggen, omdat de app hier echt pefect op werkt, misschien zelfs beter als op Chrome (gek genoeg)
+Wat me vooral opviel is dat de sizes echt precies waren zoals was bedoeld en dat het form ook niet vervormd was.
+
+#### Features
+
+Uploaden: Werkt goed <br>
+Overview: Werkt goed <br>
+Delete: Werkt goed <br>
+Detail: Werkt goed <br>
+
+#### Javascript uit
+
+De app werkt perfect zonder alle functionaliteiten en, omdat de javascript voor deze app niet cruciaal is werkt de app ook gewoon nog zoals hij is bedoeld en is de styling ook niks veranderd.
+
+#### CSS uit
+
+Op het moment van het uit doen van de CSS ziet er het eigenlijk predies hetzelfde uit als op Chrome als je de CSS uit doet, waar dus ook het probleem heerst dat de foto's te groot zijn als je de css uitschakeld maar daar wordt aan gewerkt.
+
+## Safari is goed.
+
+### IOS - Safari (mobile)
+
+This was the test report the consclusion of this report is that the app has good progressive enhancement across different browsers.
+
+---
 
 ## Usage
 
