@@ -140,8 +140,8 @@ header a p {
 
 .layout-changer button:active,
 :focus,
-:hover ~ span {
-  color: var(--CTA);
+:hover ~ .layout-changer span img {
+  fill: var(--CTA);
 }
 
 main[data-route="landing"] section {
@@ -226,9 +226,6 @@ main[data-route="landing"] section a span:hover {
 }
 
 /* DETAIL PAGE */
-main[data-route="detail"] figure form button span {
-  color: rgb(223, 26, 26);
-}
 
 main[data-route="detail"] figure div {
   display: flex;
@@ -249,7 +246,7 @@ main[data-route="detail"] h2 {
 }
 
 main[data-route="detail"] img {
-  width: 350px;
+  /* width: 350px; */
   height: auto;
   margin-bottom: 0.4em;
   position: relative;
