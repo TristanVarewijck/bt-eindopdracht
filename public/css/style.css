@@ -210,7 +210,7 @@ main[data-route="landing"] section a span {
   width: 100%;
   background: rgba(255, 255, 255, 0.473);
   backdrop-filter: blur(4px);
-  /* -webkit-backdrop-filter: blur(4px); */
+  -webkit-backdrop-filter: blur(4px);
   height: 40px;
   transform: translate(0, -20px);
   display: flex;
@@ -415,7 +415,7 @@ main[data-route="create"] form button {
   }
 }
 
-@supports not (object-fit: cover) {
+@supports not (backdrop-filter: blur(4px)) {
   main[data-route="landing"] section a span {
     background: var(--white);
   }
