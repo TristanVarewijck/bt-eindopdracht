@@ -26,10 +26,7 @@ router.get("/photo/new-photo", function (req, res, next) {
   res.render("create", { title: "New photo" });
 });
 
-console;
-
 router.post("/", upload, async (req, res) => {
-  console.log(req.body.category);
   let uuid = uuidv4();
   const newPhoto = {
     title: req.body.title,

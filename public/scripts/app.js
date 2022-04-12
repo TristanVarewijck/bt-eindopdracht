@@ -22,3 +22,9 @@ buttons.forEach((button) => {
     });
   });
 });
+
+// set ID to elements
+const cards = document.querySelectorAll("main section a");
+cards.forEach((card, index) => {
+  card.setAttribute("id", `card-${index}`);
+});

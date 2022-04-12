@@ -150,6 +150,7 @@ main[data-route="landing"] section {
   border-radius: 12px;
   width: 100%;
   display: flex;
+  flex-direction: row;
 }
 
 main[data-route="landing"] section > p {
@@ -166,15 +167,7 @@ main[data-route="landing"] section.layout-1 {
 }
 
 main[data-route="landing"] section.layout-1::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-.main[data-route="landing"] section.layout-1::-webkit-scrollbar-thumb {
-  background: black;
-  border-radius: 10px;
-}
-main[data-route="landing"] section.layout-1::-webkit-scrollbar-track {
-  background: transparent;
+  display: none;
 }
 
 main[data-route="landing"] section a.layout-1 {
@@ -238,7 +231,6 @@ main[data-route="landing"] section a span:hover {
 }
 
 /* DETAIL PAGE */
-
 main[data-route="detail"] figure div {
   display: flex;
   justify-content: flex-end;
@@ -336,6 +328,12 @@ main[data-route="create"] form button {
 }
 
 /* responsive elements */
+@media only screen and (max-width: 950px) {
+  main[data-route="landing"] section a.layout-1 {
+    width: 600px;
+  }
+}
+
 @media only screen and (max-width: 700px) {
   header {
     margin-bottom: 85px;
@@ -345,8 +343,29 @@ main[data-route="create"] form button {
     justify-content: flex-start;
     align-items: flex-start;
   }
-
   main[data-route="landing"] section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+  }
+
+  main[data-route="landing"] section.layout-1 {
+    scroll-snap-type: y mandatory;
+    /* -webkit-overflow-scrolling: touch; */
+  }
+
+  main[data-route="landing"] section a.layout-1 {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    position: relative;
+    text-align: center;
+  }
+
+  main[data-route="landing"] section.layout-2 {
     justify-content: center;
   }
 
@@ -427,5 +446,12 @@ main[data-route="create"] form button {
 @supports not (backdrop-filter: blur(4px)) {
   main[data-route="landing"] section a span {
     background: var(--white);
+  }
+}
+
+/* SCROLL SNAPPING */
+@supports (scroll-snap-type: start) {
+  .slider > a {
+    display: none;
   }
 }
