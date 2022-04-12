@@ -146,40 +146,52 @@ header a p {
 
 main[data-route="landing"] section {
   transition: transform 0.8s cubic-bezier(0.42, 0, 0.15, 1.4);
-}
-
-/* flexbox is globally supported */
-main[data-route="landing"] section.layout-1 {
   background: var(--white);
   border-radius: 12px;
   width: 100%;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  transition: transform 0.8s cubic-bezier(0.42, 0, 0.15, 1.4);
-}
-
-main[data-route="landing"] section.layout-2 {
-  background: var(--white);
-  border-radius: 12px;
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
 }
 
 main[data-route="landing"] section > p {
   text-align: center;
 }
 
+/* layout 1 == slider */
+main[data-route="landing"] section.layout-1 {
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  transition: transform 0.8s cubic-bezier(0.42, 0, 0.15, 1.4);
+}
+
+main[data-route="landing"] section.layout-1::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.main[data-route="landing"] section.layout-1::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+main[data-route="landing"] section.layout-1::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 main[data-route="landing"] section a.layout-1 {
-  width: 250px;
-  height: 300px;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 800px;
+  height: auto;
   margin: 20px;
   position: relative;
   text-align: center;
+}
+
+/* layout 2 === column view */
+main[data-route="landing"] section.layout-2 {
+  flex-flow: row wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 main[data-route="landing"] section a.layout-2 {
