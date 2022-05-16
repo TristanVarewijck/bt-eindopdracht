@@ -67,6 +67,7 @@ button {
 main {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   padding-left: 2em;
   padding-right: 2em;
 }
@@ -158,27 +159,65 @@ main[data-route="landing"] section > p {
 }
 
 /* layout 1 == slider */
-main[data-route="landing"] section.layout-1 {
+/* main[data-route="landing"] section.layout-1 {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   transition: transform 0.8s cubic-bezier(0.42, 0, 0.15, 1.4);
+  width: 960px;
+  position: relative;
+} */
+
+.slider {
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  border: solid 1px blue;
 }
 
-main[data-route="landing"] section.layout-1::-webkit-scrollbar {
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slide-track {
+  animation: scroll 5s linear infinite;
+  display: flex;
+  justify-content: space-between;
+  width: calc(250px * 8);
+  /* width: 100%; */
+}
+
+.slide {
+  height: 100px;
+  width: 250px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* transform: translateX(calc(-250px * 4)); */
+    transform: translateX(calc(250px * 16));
+  }
+}
+
+/* main[data-route="landing"] section.layout-1::-webkit-scrollbar {
   display: none;
 }
 
 main[data-route="landing"] section a.layout-1 {
   scroll-snap-align: start;
-  flex-shrink: 0;
   width: 800px;
   height: auto;
   margin: 20px;
   position: relative;
   text-align: center;
-}
+} */
 
 /* layout 2 === column view */
 main[data-route="landing"] section.layout-2 {
@@ -345,7 +384,7 @@ main[data-route="create"] form button {
   }
   main[data-route="landing"] section {
     display: flex;
-    flex-direction: column;
+
     align-items: center;
     padding: 1em;
   }

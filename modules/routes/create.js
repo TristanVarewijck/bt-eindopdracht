@@ -28,17 +28,20 @@ router.get("/photo/new-photo", function (req, res, next) {
 
 router.post("/", upload, async (req, res) => {
   let uuid = uuidv4();
+
   const newPhoto = {
     title: req.body.title,
     location: req.body.location,
     description: req.body.description,
+    categorie: req.body.categorie,
     image: req.file.filename,
     id: uuid,
   };
 
+  console.log(newPhoto);
+
   const jsonObj = JSON.stringify(newPhoto);
   localStorage.setItem(uuid, jsonObj);
-
   res.redirect("/");
 });
 
