@@ -13,18 +13,150 @@ const buttons = document.querySelectorAll(".layout-changer div button");
 const section = document.querySelector("main:first-of-type section");
 const a = document.querySelectorAll("main:first-of-type section a");
 
-//  change layout
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    section.classList = button.value;
-    a.forEach((a) => {
-      a.classList = button.value;
-    });
-  });
-});
-
 // set ID to elements
 const cards = document.querySelectorAll("main section a");
 cards.forEach((card, index) => {
   card.setAttribute("id", `card-${index}`);
 });
+
+// To add to this, it'd be cool if you could optionally disable loop duplication if "Number of items < SlidesPerView".
+const swiper1 = new Swiper(".swiper1", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: false,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    499: {
+      slidesPerView: 3,
+      spaceBetweenSlides: 50,
+    },
+    // when window width is <= 999px
+    999: {
+      slidesPerView: 5,
+      spaceBetweenSlides: 50,
+    },
+  },
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination1",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next1",
+    prevEl: ".swiper-button-prev1",
+  },
+});
+
+// swiper1.loopDestroy();
+
+const swiper2 = new Swiper(".swiper2", {
+  // Optional parameters
+  slidesPerView: 5,
+  spaceBetween: 10,
+  direction: "horizontal",
+  loop: false,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    499: {
+      slidesPerView: 3,
+      spaceBetweenSlides: 50,
+    },
+    // when window width is <= 999px
+    999: {
+      slidesPerView: 5,
+      spaceBetweenSlides: 50,
+    },
+  },
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination2",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next2",
+    prevEl: ".swiper-button-prev2",
+  },
+});
+
+swiper2.loopDestroy();
+
+const swiper3 = new Swiper(".swiper3", {
+  // Optional parameters
+  slidesPerView: 5,
+  spaceBetween: 10,
+  direction: "horizontal",
+  loop: false,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    499: {
+      slidesPerView: 3,
+      spaceBetweenSlides: 50,
+    },
+    // when window width is <= 999px
+    999: {
+      slidesPerView: 5,
+      spaceBetweenSlides: 50,
+    },
+  },
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination3",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next3",
+    prevEl: ".swiper-button-prev3",
+  },
+});
+
+swiper3.loopDestroy();
+
+const swiper4 = new Swiper(".swiper4", {
+  // Optional parameters
+  slidesPerView: 5,
+  spaceBetween: 10,
+  direction: "horizontal",
+  loop: false,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    499: {
+      slidesPerView: 3,
+      spaceBetweenSlides: 50,
+    },
+    // when window width is <= 999px
+    999: {
+      slidesPerView: 5,
+      spaceBetweenSlides: 50,
+    },
+  },
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination4",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next4",
+    prevEl: ".swiper-button-prev4",
+  },
+});
+
+swiper4.loopDestroy();

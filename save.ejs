@@ -1,0 +1,44 @@
+<h3>Fall</h3>
+<div class="slider">
+  <div class="slide-track">
+    <% if(fall.length === 0){ %>
+    <p>You have not added any pictures to your collection yet</p>
+    <% } else{ %> <% fall.forEach(function(item){ %>
+
+    <div class="slide">
+      <img src="images/<%=item.image%>" width="100%" alt="memorie-img" />
+    </div>
+    <!-- </a> -->
+    <% }); %> <% } %>
+  </div>
+</div>
+
+<h3>Winter</h3>
+<div class="slider">
+  <div class="slide-track">
+    <% if(winter.length === 0){ %>
+    <p>You have not added any pictures to your collection yet</p>
+    <% } else{ %> <% summer.forEach(function(item){ %>
+
+    <div class="slide">
+      <img src="images/<%=item.image%>" width="100%" alt="memorie-img" />
+    </div>
+    <!-- </a> -->
+    <% }); %> <% } %>
+  </div>
+</div>
+
+<h3>Spring</h3>
+<div class="slider">
+  <div class="slide-track">
+    <% if(spring.length === 0){ %>
+    <p>You have not added any pictures to your collection yet</p>
+    <% } else{ %> <% summer.forEach(function(item){ %>
+
+    <div class="slide">
+      <img src="images/<%=item.image%>" width="100%" alt="memorie-img" />
+    </div>
+    <!-- </a> -->
+    <% }); %> <% } %>
+  </div>
+</div>

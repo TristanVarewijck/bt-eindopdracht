@@ -5,7 +5,7 @@
     <header>
       <small>Tristan Varewijck & Browser Technologies</small>
       <div>
-        <h1>Photo review</h1>
+        <h1>Seasonal photo collection</h1>
         <a href="photo/new-photo"
           ><p>Add photo</p>
           <span>
@@ -15,81 +15,161 @@
       </div>
     </header>
 
-    <div class="layout-changer">
-      <div>
-        <button class="layout-1" value="layout-1">
-          <span
-            ><img src="/icons/view_column_black_24dp.svg" alt="layout-1"
-          /></span>
-        </button>
-        <button class="layout-2" value="layout-2">
-          <span style="transform: rotate(-90deg)" class="material-icons">
-            <img src="/icons/view_column_black_24dp.svg" alt="layout-2" />
-          </span>
-        </button>
-      </div>
-    </div>
-
     <main data-route="landing">
-      <h3>Summer</h3>
-      <div class="slider">
-        <div class="slide-track">
-          <% if(summer.length === 0){ %>
-          <p>You have not added any pictures to your collection yet</p>
-          <% } else{ %> <% summer.forEach(function(item){ %>
+      <div class="summer-container">
+        <h3>Summer</h3>
+        <div class="swiper1">
+          <div class="swiper-wrapper">
+            <% if(summer.length === 0){ %>
+            <p>You have not added any pictures to your collection yet</p>
+            <% } else{ %> <% summer.forEach(function(item){ %>
 
-          <div class="slide">
-            <img src="images/<%=item.image%>" width="100%" alt="memorie-img" />
+            <a href="photo/<%=item.id%>" class="swiper-slide">
+              <div>
+                <img
+                  src="images/<%=item.image%>"
+                  width="100%"
+                  alt="memorie-img"
+                />
+              </div>
+            </a>
+            <% }); %> <% } %>
           </div>
-          <!-- </a> -->
-          <% }); %> <% } %>
+
+          <% if(summer.length > 0){ %>
+          <div class="controls">
+            <div class="swiper-button-prev1">prev</div>
+            <div class="swiper-button-next1">next</div>
+          </div>
+
+            <div class="swiper-pagination1"></div>
+            <% } %>
+          </div>
         </div>
-      </div>
 
-      <h3>Fall</h3>
-      <div class="slider">
-        <div class="slide-track">
-          <% if(fall.length === 0){ %>
-          <p>You have not added any pictures to your collection yet</p>
-          <% } else{ %> <% fall.forEach(function(item){ %>
+        <div class="fall-container">
+          <h3>Fall</h3>
+          <div class="swiper2">
+            <div class="swiper-wrapper">
+              <% if(fall.length === 0){ %>
+              <p>You have not added any pictures to your collection yet</p>
+              <% } else{ %> <% fall.forEach(function(item){ %>
 
-          <div class="slide">
-            <img src="images/<%=item.image%>" width="100%" alt="memorie-img" />
+              <a href="photo/<%=item.id%>" class="swiper-slide">
+                <div>
+                  <img
+                    src="images/<%=item.image%>"
+                    width="100%"
+                    alt="memorie-img"
+                  />
+                </div>
+              </a>
+              <!-- </a> -->
+              <% }); %> <% } %>
+            </div>
+
+            <% if(fall.length > 0){ %>
+            <div class="controls">
+            <div class="swiper-button-prev2">prev</div>
+            <div class="swiper-button-next2">next</div>
+            </div>
+
+            <div class="swiper-pagination2"></div>
+            <% } %>
           </div>
-          <!-- </a> -->
-          <% }); %> <% } %>
         </div>
-      </div>
 
-      <h3>Winter</h3>
-      <div class="slider">
-        <div class="slide-track">
-          <% if(winter.length === 0){ %>
-          <p>You have not added any pictures to your collection yet</p>
-          <% } else{ %> <% summer.forEach(function(item){ %>
+        <div class="winter-container">
+          <h3>Winter</h3>
+          <div class="swiper3">
+            <div class="swiper-wrapper">
+              <% if(winter.length === 0){ %>
+              <p>You have not added any pictures to your collection yet</p>
+              <% } else{ %> <% winter.forEach(function(item){ %>
 
-          <div class="slide">
-            <img src="images/<%=item.image%>" width="100%" alt="memorie-img" />
+              <a href="photo/<%=item.id%>" class="swiper-slide">
+                <div>
+                  <img
+                    src="images/<%=item.image%>"
+                    width="100%"
+                    alt="memorie-img"
+                  />
+                </div>
+              </a>
+              <% }); %> <% } %>
+            </div>
+
+            <% if(winter.length > 0){ %>
+              <div class="controls">
+            <div class="swiper-button-prev3">prev</div>
+            <div class="swiper-button-next3">next</div>
+              </div>
+
+            <div class="swiper-pagination3"></div>
+            <% } %>
           </div>
-          <!-- </a> -->
-          <% }); %> <% } %>
         </div>
-      </div>
 
-      <h3>Spring</h3>
-      <div class="slider">
-        <div class="slide-track">
-          <% if(spring.length === 0){ %>
-          <p>You have not added any pictures to your collection yet</p>
-          <% } else{ %> <% summer.forEach(function(item){ %>
+        <div class="spring-container">
+          <h3>Spring</h3>
+          <div class="swiper4">
+            <div class="swiper-wrapper">
+              <% if(spring.length === 0){ %>
+              <p>You have not added any pictures to your collection yet</p>
+              <% } else{ %> <% spring.forEach(function(item){ %>
 
-          <div class="slide">
-            <img src="images/<%=item.image%>" width="100%" alt="memorie-img" />
+              <a href="photo/<%=item.id%>" class="swiper-slide">
+                <div>
+                  <img
+                    src="images/<%=item.image%>"
+                    width="100%"
+                    alt="memorie-img"
+                  />
+                </div>
+              </a>
+              <!-- </a> -->
+              <% }); %> <% } %>
+            </div>
+
+            <% if(spring.length > 0){ %>
+            <div class="controls">
+            <div class="swiper-button-prev4">prev</div>
+            <div class="swiper-button-next4">next</div>
+            </div>
+
+            <div class="swiper-pagination4"></div>
+            <% } %>
           </div>
-          <!-- </a> -->
-          <% }); %> <% } %>
         </div>
       </div>
     </main>
+    <footer class="footer">
+      Tristan Varewijck
+    </footer>
+
+    <noscript>
+      <style type="text/css">
+
+      .swiper-wrapper{
+        overflow-x: auto;
+      }
+
+      .swiper-slide{
+        width: fit-content;
+        margin-right: 2em
+      }
+        .swiper-slide img {
+          width: 250px;
+        }
+
+        .controls{
+          display: none;
+        }
+
+        a div{
+          width: fit-content;
+        }
+      </style>
+    </noscript>
   </body>
 </html>
