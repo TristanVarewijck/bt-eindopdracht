@@ -34,7 +34,7 @@ body {
   --background: #ffff;
   --white: #ffffff;
   --text: #151515;
-  --CTA: #3d9bf7;
+  --CTA: #151515;
   --font: "Inter", sans-serif, Tahoma, Verdana, sans-serif;
 }
 
@@ -153,6 +153,16 @@ header a p {
   fill: var(--CTA);
 }
 
+main[data-route="landing"] .banner-image {
+  width: 100%;
+  background-image: url("../icons/banner-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  height: 22em;
+}
+
 main[data-route="landing"] section {
   transition: transform 0.8s cubic-bezier(0.42, 0, 0.15, 1.4);
   background: var(--white);
@@ -168,6 +178,13 @@ main[data-route="landing"] section > p {
 
 main[data-route="landing"] > div {
   margin-bottom: 5em;
+  border-bottom: 0.8px solid rgba(70, 70, 70, 0.345);
+  padding-bottom: 1.5em;
+}
+
+main[data-route="landing"] > div:first-of-type {
+  margin-bottom: 2.5em;
+  border-bottom: none;
 }
 
 .swiper1,
@@ -338,10 +355,16 @@ main[data-route="landing"] section a span:hover {
 }
 
 /* DETAIL PAGE */
-main[data-route="detail"] figure div {
+
+main[data-route="detail"] figcaption {
+  position: relative;
+  width: 22em;
   display: flex;
-  justify-content: flex-end;
-  width: 100%;
+  justify-content: space-between;
+}
+
+main[data-route="detail"] form {
+  display: inline;
 }
 
 main[data-route="detail"] small {
@@ -365,11 +388,20 @@ main[data-route="detail"] img {
 }
 
 /* CREATE PAGE */
+
+main[data-route="create"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 main[data-route="create"] section {
   padding: 1.5em 1.5em 1.5em 1.5em;
   background: var(--white);
   border-radius: 7px;
-  box-shadow: 0 4px 32px 0 rgba(31, 38, 135, 0.15);
+  box-shadow: 0 4px 32px 0 rgba(50, 50, 50, 0.15);
+  width: 30em;
+  height: auto;
 }
 main[data-route="create"] section div {
   display: flex;
@@ -383,7 +415,8 @@ main[data-route="create"] section div {
 }
 
 main[data-route="create"] input,
-textarea {
+textarea,
+select {
   outline: none;
   border-radius: 4px;
   color: var(--text);
@@ -391,6 +424,7 @@ textarea {
   border-color: rgb(224, 224, 224);
   height: 100%;
   width: 100%;
+  resize: none;
 }
 
 main[data-route="create"] input:required:focus:valid {
@@ -427,7 +461,6 @@ main[data-route="create"] form button {
   background: var(--CTA);
   border-radius: 50px;
   padding: 1em 1.5em 1em 1.5em;
-  box-shadow: 0px 4px 18px rgba(61, 155, 247, 0.35);
   width: 100%;
   color: var(--white);
   font-weight: 500;
@@ -439,20 +472,29 @@ main[data-route="create"] form button {
   main[data-route="landing"] section a.layout-1 {
     width: 600px;
   }
+
+  main[data-route="landing"] .banner-image {
+    height: 15em;
+  }
 }
 
 @media only screen and (max-width: 700px) {
   header {
-    margin-bottom: 85px;
+    margin-bottom: 125px;
   }
+
+  main[data-route="landing"] .banner-image {
+    display: none;
+  }
+
   header div {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
   }
+
   main[data-route="landing"] section {
     display: flex;
-
     align-items: center;
     padding: 1em;
   }
@@ -498,12 +540,15 @@ main[data-route="create"] form button {
 }
 
 footer {
-  height: 10em;
+  height: 2.5em;
   background: var(--CTA);
   width: 100%;
   text-align: center;
   color: white;
-  padding-top: 2em;
+  /* padding-top: 2em; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 460px) {

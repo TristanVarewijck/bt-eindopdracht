@@ -22,9 +22,11 @@
           height="auto"
         />
         <figcaption>
-          <small><%=detailItem.location%></small>
-          <h2><%=detailItem.title%></h2>
-          <p><%=detailItem.description%></p>
+          <div>
+            <small><%=detailItem.location%></small>
+            <h2><%=detailItem.title%></h2>
+            <p><%=detailItem.description%></p>
+          </div>
           <div>
             <form
               action="/photo/<%= detailItem.id%>/?_method=DELETE"

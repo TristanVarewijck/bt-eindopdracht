@@ -15,11 +15,8 @@ router.get("/", function (req, res, next) {
 
   // filter items on categorie so i can put then in the caroussels
   const summer = items.filter((item) => item.categorie === "summer");
-
   const fall = items.filter((item) => item.categorie === "fall");
-
   const winter = items.filter((item) => item.categorie === "winter");
-
   const spring = items.filter((item) => item.categorie === "spring");
 
   res.render("index", {
