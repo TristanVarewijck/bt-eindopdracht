@@ -83,7 +83,7 @@ main {
 header {
   position: relative;
   margin-bottom: 25px;
-  margin-top: 25px;
+  margin-top: 75px;
   padding-left: 2em;
   padding-right: 2em;
 }
@@ -249,7 +249,8 @@ main[data-route="landing"] > div {
 .swiper-slide img {
   display: block;
   width: 250px;
-  height: auto;
+  height: 250px;
+  object-fit: cover;
 }
 
 .slide-track {
@@ -503,6 +504,12 @@ footer {
   text-align: center;
   color: white;
   padding-top: 2em;
+}
+
+@media only screen and (max-width: 460px) {
+  header {
+    margin-bottom: 125px;
+  }
 }
 
 /* supports checking */

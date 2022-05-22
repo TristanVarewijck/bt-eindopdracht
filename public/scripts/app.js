@@ -29,13 +29,17 @@ const swiper1 = new Swiper(".swiper1", {
     disableOnInteraction: false,
   },
   breakpoints: {
+    400: {
+      slidesPerView: 1,
+      spaceBetweenSlides: 100,
+    },
     499: {
-      slidesPerView: 3,
-      spaceBetweenSlides: 50,
+      slidesPerView: 2,
+      spaceBetweenSlides: 100,
     },
     // when window width is <= 999px
     999: {
-      slidesPerView: 5,
+      slidesPerView: 4,
       spaceBetweenSlides: 50,
     },
   },
@@ -64,13 +68,17 @@ const swiper2 = new Swiper(".swiper2", {
     disableOnInteraction: false,
   },
   breakpoints: {
+    400: {
+      slidesPerView: 1,
+      spaceBetweenSlides: 100,
+    },
     499: {
-      slidesPerView: 3,
-      spaceBetweenSlides: 50,
+      slidesPerView: 2,
+      spaceBetweenSlides: 100,
     },
     // when window width is <= 999px
     999: {
-      slidesPerView: 5,
+      slidesPerView: 4,
       spaceBetweenSlides: 50,
     },
   },
@@ -100,13 +108,17 @@ const swiper3 = new Swiper(".swiper3", {
     disableOnInteraction: false,
   },
   breakpoints: {
+    400: {
+      slidesPerView: 1,
+      spaceBetweenSlides: 100,
+    },
     499: {
-      slidesPerView: 3,
-      spaceBetweenSlides: 50,
+      slidesPerView: 2,
+      spaceBetweenSlides: 100,
     },
     // when window width is <= 999px
     999: {
-      slidesPerView: 5,
+      slidesPerView: 4,
       spaceBetweenSlides: 50,
     },
   },
@@ -136,14 +148,18 @@ const swiper4 = new Swiper(".swiper4", {
     disableOnInteraction: false,
   },
   breakpoints: {
+    400: {
+      slidesPerView: 1,
+      spaceBetweenSlides: 100,
+    },
     499: {
-      slidesPerView: 3,
-      spaceBetweenSlides: 50,
+      slidesPerView: 2,
+      spaceBetweenSlides: 100,
     },
     // when window width is <= 999px
     999: {
-      slidesPerView: 5,
-      spaceBetweenSlides: 50,
+      slidesPerView: 4,
+      spaceBetweenSlides: 0,
     },
   },
 
