@@ -107,7 +107,6 @@ header a {
   padding: 1em 1.5em 1em 1.5em;
   box-shadow: 0px 4px 18px rgba(61, 155, 247, 0.35);
   transition: 0.2s ease-in-out;
-  /* width: 100%; */
 }
 
 header a.secondary {
@@ -209,9 +208,7 @@ main[data-route="landing"] > div:first-of-type {
   border-radius: 50px;
   background: var(--CTA) !important;
   position: relative;
-  /* left: 5% !important; */
   color: var(--white) !important;
-  /* bottom: -5% !important; */
   box-shadow: 0px 4px 12px rgba(125, 125, 125, 0.2);
   display: flex;
   justify-content: center;
@@ -228,9 +225,7 @@ main[data-route="landing"] > div:first-of-type {
   border-radius: 50px;
   background: var(--CTA) !important;
   position: relative;
-  /* left: 90% !important; */
   color: var(--white) !important;
-  /* bottom: -5% !important; */
   box-shadow: 0px 4px 12px rgba(125, 125, 125, 0.2);
   display: flex;
   justify-content: center;
@@ -290,19 +285,6 @@ main[data-route="landing"] > div:first-of-type {
     transform: translateX(calc(250px * 16));
   }
 }
-
-/* main[data-route="landing"] section.layout-1::-webkit-scrollbar {
-  display: none;
-}
-
-main[data-route="landing"] section a.layout-1 {
-  scroll-snap-align: start;
-  width: 800px;
-  height: auto;
-  margin: 20px;
-  position: relative;
-  text-align: center;
-} */
 
 /* layout 2 === column view */
 main[data-route="landing"] section.layout-2 {
